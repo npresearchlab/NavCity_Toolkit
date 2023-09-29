@@ -1,0 +1,2 @@
+C:\Users\Admin\Downloads\New Unity Project (2) (1)\New Unity Project (2)\obj\Debug\SteamVR.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\New Unity Project (2) (1)\New Unity Project (2)\obj\Debug\SteamVR.csproj.CoreCompileInputs.cache
