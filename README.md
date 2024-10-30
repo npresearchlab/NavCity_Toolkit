@@ -6,4 +6,5 @@ The NavCity Toolkit is a suite of spatial navigation tasks that contains a natur
 
 This toolkit is open-source. The code and associated files provided are protected by the Creative Commons Attribution 4.0 International Public License. See the license.txt file for more details.
 
+# Dependencies
 
