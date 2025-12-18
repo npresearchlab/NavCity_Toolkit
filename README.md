@@ -46,8 +46,8 @@ If you use the NavCity Toolkit in your research, please cite the primary paper:
 ## Features
 
 - **Two Separate Unity Projects**: Familiarization Trial and NavCity task can be deployed independently
-- ***NavCity***, as a **Naturalistic City-Like Environment**: Explore a city-like virtual environment designed for ecological validity
-- ***NavCity***, as a **Wayfinding Task**: Navigate between landmarks and destinations in an immersive VR setting
+- **Familiarization Trial**: Allowing participants to practice movement in a sample virtual reality immersive environment with similar mechanisms to the NavCity task
+- ***NavCity***, as a **Wayfinding Task in a Naturalistic City-Like Environment**: Explore a city-like virtual environment designed for ecological validity, navigating between landmarks in an immersive VR setting
 - ***NARA***, as an **Allocentric Assessment**: Post-NavCity navigation, evaluate formation of spatial representations with the NARA
 - **Open Source**: Full access to Unity project files, scripts, and assets
 - **Research-Validated**: Used in published peer-reviewed studies on spatial navigation, creating a baseline understanding of performance in healthy younger and older adults 
@@ -125,14 +125,15 @@ Each Unity project operates independently and should be opened separately in Uni
 1. Open the `Familiarization Trial` Unity project (see Installation above)
 2. Locate and open the main scene file
 3. Connect your VR headset
-4. Press Play in the Unity Editor to test
+4. Press Play in the Unity Editor to run
 
 **For NavCity (Main Task):**
 1. Open the `NavCity` Unity project (see Installation above)
 2. Navigate to the main scene file in the Project window
 3. Review the scene hierarchy and key GameObjects
 4. Connect your VR headset
-5. Press Play in the Unity Editor to test
+5. Edit your participant ID in the right-hand panel
+5. Press Play in the Unity Editor to run
 
 > **Note**: These are separate Unity projects and must be opened independently. You cannot run both simultaneously in the same Unity instance.
 
