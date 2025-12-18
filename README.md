@@ -8,10 +8,11 @@ A toolkit of open-source spatial navigation tasks for virtual reality research, 
 
 The **NavCity Toolkit** provides researchers with tools to study spatial navigation and allocentric representation formation in immersive virtual environments. The toolkit includes:
 
-- **NavCity**: A naturalistic, city-like wayfinding task in virtual reality
+- **Familiarization Trial**: A practice/training task to familiarize participants with VR navigation controls
+- **NavCity**: A naturalistic, city-like wayfinding task in virtual reality (main experimental task)
 - **NARA (NavCity Allocentric Representation Assessment)**: A pen-and-paper assessment of allocentric representations formed during NavCity exposure
 
-This repository contains all source code, Unity assets, and materials needed to implement these tasks in your research.
+This repository contains **two separate Unity projects** (Familiarization Trial and NavCity) along with all source code, assets, and materials needed to implement these tasks in your research.
 
 ### Important Note
 
@@ -44,13 +45,26 @@ If you use the NavCity Toolkit in your research, please cite the primary paper:
 
 ## Features
 
+- **Two Separate Unity Projects**: Familiarization Trial and NavCity task can be deployed independently
 - **Naturalistic City-Like Environment**: Explore a city-like virtual environment designed for ecological validity
 - **Wayfinding Tasks**: Navigate between landmarks and destinations in an immersive VR setting
 - **Allocentric Assessment**: Post-NavCity navigation, evaluate formation of spatial representations with the NARA
 - **Open Source**: Full access to Unity project files, scripts, and assets
 - **Research-Validated**: Used in published peer-reviewed studies on spatial navigation
 
+## Typical Research Protocol
+
+The toolkit is designed to be used in the following sequence:
+
+1. **Familiarization Trial** (first): Participants practice VR navigation controls in a separate, simpler environment
+2. **NavCity Task** (second): Participants complete the main experimental navigation task
+3. **NARA Assessment** (third): Participants complete the pen-and-paper allocentric representation assessment
+
+Each Unity project operates independently and should be opened separately in Unity Hub.
+
 ## System Requirements
+
+*These requirements apply to both Unity projects (Familiarization Trial and NavCity).*
 
 ### Confirmed Requirements
 - **Unity Version**: [To be added]
@@ -84,10 +98,19 @@ If you use the NavCity Toolkit in your research, please cite the primary paper:
    cd NavCity_Toolkit
    ```
 
-2. **Open in Unity**
-   - Launch Unity Hub
-   - Click "Add" and select the cloned repository folder
-   - Open the project with the appropriate Unity version
+2. **Open a Unity project**
+   
+   The repository contains **two independent Unity projects**. You can open either one:
+   
+   - **For the Familiarization Trial:**
+     - Launch Unity Hub
+     - Click "Add" and select the `NavCity_Toolkit/Familiarization Trial/` folder
+     - Open with the appropriate Unity version
+   
+   - **For the main NavCity task:**
+     - Launch Unity Hub
+     - Click "Add" and select the `NavCity_Toolkit/NavCity/` folder
+     - Open with the appropriate Unity version
 
 3. **Set up VR**
    - Configure your VR headset and runtime
@@ -98,24 +121,48 @@ If you use the NavCity Toolkit in your research, please cite the primary paper:
 
 *Detailed instructions are in development. For now:*
 
-1. Navigate to the `NavCity` folder in the Unity Project window
-2. Open the main scene file
+**For Familiarization Trial:**
+1. Open the `Familiarization Trial` Unity project (see Installation above)
+2. Locate and open the main scene file
+3. Connect your VR headset
+4. Press Play in the Unity Editor to test
+
+**For NavCity (Main Task):**
+1. Open the `NavCity` Unity project (see Installation above)
+2. Navigate to the main scene file in the Project window
 3. Review the scene hierarchy and key GameObjects
 4. Connect your VR headset
 5. Press Play in the Unity Editor to test
 
+> **Note**: These are separate Unity projects and must be opened independently. You cannot run both simultaneously in the same Unity instance.
+
 ## Repository Structure
+
+This repository contains **two separate Unity projects**, each serving a distinct purpose in the research protocol:
 
 ```
 NavCity_Toolkit/
-├── Familiarization Trial/   # Practice/familiarization task materials
-├── NavCity/                  # Main NavCity VR task
-│   ├── Scripts/              # C# scripts for task logic
-│   ├── Scenes/               # Unity scene files
-│   └── Assets/               # 3D models, textures, and other assets
-├── README.md                 # This file
-└── license.txt               # CC BY 4.0 license
+├── Familiarization Trial/    # Independent Unity project for practice/training
+│   ├── Assets/                # Unity assets, scripts, scenes
+│   ├── Packages/              # Unity package dependencies
+│   ├── ProjectSettings/       # Unity project configuration
+│   └── ...                    # Other Unity project files
+│
+├── NavCity/                   # Independent Unity project for main experimental task
+│   ├── Assets/                # Unity assets, scripts, scenes
+│   ├── Packages/              # Unity package dependencies
+│   ├── ProjectSettings/       # Unity project configuration
+│   └── ...                    # Other Unity project files
+│
+├── README.md                  # This file
+└── license.txt                # CC BY 4.0 license
 ```
+
+### Project Descriptions
+
+**Familiarization Trial**: A standalone practice environment that allows participants to become comfortable with VR navigation controls before the main experiment. This should typically be run first in your research protocol.
+
+**NavCity**: The main experimental task - a naturalistic, city-like environment where participants perform wayfinding and navigation tasks. This is the primary data collection environment used in the published studies.
 
 ## Documentation
 
