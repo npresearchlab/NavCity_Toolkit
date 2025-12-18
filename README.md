@@ -46,11 +46,11 @@ If you use the NavCity Toolkit in your research, please cite the primary paper:
 ## Features
 
 - **Two Separate Unity Projects**: Familiarization Trial and NavCity task can be deployed independently
-- **Naturalistic City-Like Environment**: Explore a city-like virtual environment designed for ecological validity
-- **Wayfinding Tasks**: Navigate between landmarks and destinations in an immersive VR setting
-- **Allocentric Assessment**: Post-NavCity navigation, evaluate formation of spatial representations with the NARA
+- ***NavCity***, as a **Naturalistic City-Like Environment**: Explore a city-like virtual environment designed for ecological validity
+- ***NavCity***, as a **Wayfinding Task**: Navigate between landmarks and destinations in an immersive VR setting
+- ***NARA***, as an **Allocentric Assessment**: Post-NavCity navigation, evaluate formation of spatial representations with the NARA
 - **Open Source**: Full access to Unity project files, scripts, and assets
-- **Research-Validated**: Used in published peer-reviewed studies on spatial navigation
+- **Research-Validated**: Used in published peer-reviewed studies on spatial navigation, creating a baseline understanding of performance in healthy younger and older adults 
 
 ## Typical Research Protocol
 
